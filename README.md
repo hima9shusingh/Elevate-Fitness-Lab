@@ -1,16 +1,178 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏋️ ELEVATE FITNESS LAB
 
-Currently, two official plugins are available:
+### 🚀 Rise Stronger Every Day
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&pause=1000&color=F97316&center=true&vCenter=true&width=600&lines=Modern+Gym+Website;Responsive+Landing+Page;Premium+Fitness+Experience;Built+with+React+%26+Vite" />
 
-## React Compiler
+<br>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 Overview
+
+**Elevate Fitness Lab** is a modern and fully responsive Gym Website Landing Page designed to deliver a premium fitness brand experience.
+
+Built using **React**, **Vite**, **HTML**, **CSS**, and **JavaScript**, the website features an attractive UI, smooth animations, dark/light mode, interactive sections, and mobile-first responsiveness.
+
+---
+
+# ✨ Features
+
+### 🎨 Premium UI/UX
+
+Modern gym-inspired design with smooth transitions and engaging user experience.
+
+### 📱 Fully Responsive
+
+Optimized for Mobile, Tablet, and Desktop devices.
+
+### 🌙 Dark / Light Mode
+
+One-click theme switching with modern visual effects.
+
+### 💪 Membership Plans
+
+Professional pricing cards with clear membership details.
+
+### 👨‍🏫 Expert Trainers
+
+Dedicated trainer showcase section.
+
+### ⭐ Member Stories
+
+Interactive testimonial carousel with smooth animations.
+
+### 📞 Contact Form
+
+User-friendly contact form with validation.
+
+### ⚡ Fast Performance
+
+Powered by Vite for lightning-fast loading.
+
+---
+
+# 🛠️ Tech Stack
+
+```yaml
+Frontend:
+  - React.js
+  - Vite
+  - HTML5
+  - CSS3
+  - JavaScript
+
+Deployment:
+  - Vercel
+
+Version Control:
+  - Git
+  - GitHub
+```
+
+---
+
+# 📂 Project Structure
+
+```bash
+Elevate-Fitness-Lab
+│
+├── public
+│
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+```bash
+# Clone Repository
+git clone https://github.com/hima9shusingh/Elevate-Fitness-Lab.git
+
+# Open Folder
+cd Elevate-Fitness-Lab
+
+# Install Dependencies
+npm install
+
+# Run Development Server
+npm run dev
+```
+
+---
+
+# 🎯 Assignment Requirements
+
+✅ Responsive Layout
+
+✅ Navigation Bar
+
+✅ Hero Section
+
+✅ About Section
+
+✅ Membership Plans
+
+✅ Trainers Section
+
+✅ Contact Form
+
+✅ Footer with Social Media Links
+
+✅ Dark/Light Mode
+
+✅ Smooth Animations
+
+✅ Interactive Elements
+
+---
+
+# 🌐 Live Demo
+
+```text
+Coming Soon...
+```
+
+Replace with your Vercel deployment link.
+
+---
+
+# 👨‍💻 Developer
+
+### Himanshu Kumar Singh
+
+B.Tech CSE | Full Stack Developer
+
+🔗 GitHub: https://github.com/hima9shusingh
+
+---
+
+<div align="center">
+
+### 💪 Elevate Fitness Lab
+
+#### Rise Stronger Every Day
+
+⭐ If you like this project, don't forget to star the repository.
+
+</div>
