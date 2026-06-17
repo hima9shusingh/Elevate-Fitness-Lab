@@ -150,7 +150,7 @@ npm run dev
 # 🌐 Live Demo
 
 ```text
-Coming Soon...
+elevate-fitness-lab.vercel.app
 ```
 
 Replace with your Vercel deployment link.
