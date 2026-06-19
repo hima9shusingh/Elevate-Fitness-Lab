@@ -1,27 +1,31 @@
 import { motion } from 'framer-motion';
 import { FaInstagram, FaTwitter } from 'react-icons/fa';
+import trainerMarcus from '../assets/images/trainer-marcus.jpg';
+import trainerSarah from '../assets/images/trainer-sarah.jpg';
+import trainerDavid from '../assets/images/trainer-david.jpg';
+import trainerElena from '../assets/images/trainer-elena.jpg';
 
 const Trainers = () => {
-  const trainers = [
+  const trainerData = [
     {
       name: 'Marcus Thorne',
       specialty: 'Head Strength Coach',
-      image: 'https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1374&auto=format&fit=crop',
+      image: trainerMarcus,
     },
     {
       name: 'Sarah Jenkins',
       specialty: 'CrossFit Specialist',
-      image: 'https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1374&auto=format&fit=crop',
+      image: trainerSarah,
     },
     {
       name: 'David Chen',
       specialty: 'Nutrition & Wellness',
-      image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop',
+      image: trainerDavid,
     },
     {
       name: 'Elena Rostova',
       specialty: 'Yoga Instructor',
-      image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1470&auto=format&fit=crop',
+      image: trainerElena,
     }
   ];
 
@@ -46,7 +50,7 @@ const Trainers = () => {
               transition={{ delay: 0.2 }}
               className="mt-4 text-gray-600 dark:text-gray-400"
             >
-              Learn from the best. Our certified experts are here to guide, motivate, and push you to achieve your peak performance.
+              Our certified coaching team is here to guide and support your training progression.
             </motion.p>
           </div>
           <motion.button
@@ -60,7 +64,7 @@ const Trainers = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {trainers.map((trainer, index) => (
+          {trainerData.map((trainer, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, y: 30 }}

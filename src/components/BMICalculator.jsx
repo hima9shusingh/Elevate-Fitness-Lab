@@ -1,27 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const BMICalculator = () => {
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
-  const [bmi, setBmi] = useState(null);
-  const [category, setCategory] = useState('');
 
-  useEffect(() => {
-    if (height && weight && height > 0 && weight > 0) {
-      const heightInMeters = height / 100;
-      const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(1);
-      setBmi(bmiValue);
-      
-      if (bmiValue < 18.5) setCategory('Underweight');
-      else if (bmiValue >= 18.5 && bmiValue < 24.9) setCategory('Normal');
-      else if (bmiValue >= 25 && bmiValue < 29.9) setCategory('Overweight');
-      else setCategory('Obese');
-    } else {
-      setBmi(null);
-      setCategory('');
-    }
-  }, [height, weight]);
+  let bmi = null;
+  let category = '';
+
+  if (height && weight && height > 0 && weight > 0) {
+    const heightInMeters = height / 100;
+    bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+    
+    if (bmi < 18.5) category = 'Underweight';
+    else if (bmi >= 18.5 && bmi < 24.9) category = 'Normal';
+    else if (bmi >= 25 && bmi < 29.9) category = 'Overweight';
+    else category = 'Obese';
+  }
 
   const getCategoryColor = () => {
     switch (category) {
@@ -35,7 +30,6 @@ const BMICalculator = () => {
 
   return (
     <section className="py-24 bg-gym-white dark:bg-gym-black transition-colors duration-300 relative overflow-hidden">
-      {/* Background styling for contrast */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gym-orange/5 pointer-events-none" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -51,7 +45,7 @@ const BMICalculator = () => {
               Calculate Your <span className="text-gym-orange">BMI</span>
             </motion.h2>
             <p className="text-gray-400 mb-8">
-              Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Use this calculator to check your category.
+              Use the calculator below to quickly calculate your Body Mass Index (BMI) class.
             </p>
             
             {bmi && (

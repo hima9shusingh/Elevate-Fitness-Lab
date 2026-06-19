@@ -1,5 +1,11 @@
 import { motion } from 'framer-motion';
 import { Dumbbell, Activity, Heart, Target, Users, Apple } from 'lucide-react';
+import serviceWeight from '../assets/images/service-weight.jpg';
+import serviceCardio from '../assets/images/service-cardio.jpg';
+import serviceYoga from '../assets/images/service-yoga.jpg';
+import serviceCrossfit from '../assets/images/service-crossfit.jpg';
+import servicePt from '../assets/images/service-pt.jpg';
+import serviceNutrition from '../assets/images/service-nutrition.jpg';
 
 const Services = () => {
   const services = [
@@ -7,37 +13,37 @@ const Services = () => {
       icon: <Dumbbell className="w-8 h-8" />,
       title: 'Weight Training',
       desc: 'Build strength and muscle with our extensive free weights and resistance machines.',
-      image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop'
+      image: serviceWeight
     },
     {
       icon: <Activity className="w-8 h-8" />,
       title: 'Cardio',
-      desc: 'Improve endurance with state-of-the-art treadmills, ellipticals, and rowing machines.',
-      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop'
+      desc: 'Improve endurance with modern treadmills, ellipticals, and rowing machines.',
+      image: serviceCardio
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: 'Yoga',
       desc: 'Enhance flexibility, balance, and mental clarity in our dedicated zen studios.',
-      image: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1470&auto=format&fit=crop'
+      image: serviceYoga
     },
     {
       icon: <Target className="w-8 h-8" />,
       title: 'CrossFit',
       desc: 'High-intensity functional training designed for all fitness levels.',
-      image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop'
+      image: serviceCrossfit
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: 'Personal Training',
       desc: '1-on-1 coaching to help you reach your specific fitness goals faster.',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop'
+      image: servicePt
     },
     {
       icon: <Apple className="w-8 h-8" />,
       title: 'Nutrition Coaching',
       desc: 'Personalized meal plans and advice to complement your physical training.',
-      image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop'
+      image: serviceNutrition
     }
   ];
 
@@ -76,7 +82,7 @@ const Services = () => {
             transition={{ delay: 0.2 }}
             className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Discover our comprehensive range of fitness programs and facilities designed to cater to your every need.
+            Explore our primary fitness programs and facility options.
           </motion.p>
         </div>
 
@@ -94,7 +100,6 @@ const Services = () => {
               whileHover={{ y: -10 }}
               className="group relative bg-white dark:bg-gym-black rounded-sm overflow-hidden shadow-lg border border-transparent dark:border-white/5 hover:border-gym-orange/50 transition-all duration-300"
             >
-              {/* Card Image Background (Hidden initially, shows on hover) */}
               <div className="absolute inset-0 z-0 overflow-hidden opacity-0 group-hover:opacity-20 transition-opacity duration-500">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
               </div>

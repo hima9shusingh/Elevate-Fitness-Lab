@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
 
 const Counter = ({ end, duration = 2, suffix = "+" }) => {
   const [count, setCount] = useState(0);

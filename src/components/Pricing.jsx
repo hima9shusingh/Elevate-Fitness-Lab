@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const Pricing = () => {
-  const plans = [
+  const membershipPlans = [
     {
       name: 'Basic',
       price: '₹999',
@@ -34,7 +34,7 @@ const Pricing = () => {
       name: 'Elite',
       price: '₹2999',
       period: '/mo',
-      desc: 'The ultimate package for peak performance.',
+      desc: 'For advanced and high performance training.',
       features: [
         'All Pro features',
         'Unlimited PT sessions',
@@ -66,12 +66,12 @@ const Pricing = () => {
             transition={{ delay: 0.2 }}
             className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Choose the perfect plan to forge your limits. No hidden fees, cancel anytime.
+            Review our flexible membership tiers below. Select a plan to begin.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
-          {plans.map((plan, index) => (
+          {membershipPlans.map((plan, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, y: 30 }}

@@ -1,4 +1,3 @@
-import { Dumbbell } from 'lucide-react';
 import { FaInstagram, FaTwitter, FaYoutube, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
@@ -7,7 +6,6 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           
-          {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <img src="/elevate-logo.svg" alt="Elevate Fitness Lab Logo" className="w-10 h-10" />
@@ -16,7 +14,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 text-sm mb-6">
-              Empowering individuals to achieve their fitness goals through state-of-the-art facilities and expert guidance.
+              Helping people reach their fitness goals with modern facilities and experienced coaches.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-gray-400 hover:text-gym-orange transition-colors">
@@ -34,7 +32,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-display text-xl uppercase tracking-wider mb-6">Quick Links</h4>
             <ul className="space-y-3">
@@ -46,7 +43,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Programs */}
           <div>
             <h4 className="font-display text-xl uppercase tracking-wider mb-6">Programs</h4>
             <ul className="space-y-3">
@@ -58,7 +54,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h4 className="font-display text-xl uppercase tracking-wider mb-6">Newsletter</h4>
             <p className="text-gray-400 text-sm mb-4">Subscribe for the latest fitness tips and exclusive offers.</p>

@@ -22,7 +22,6 @@ const Contact = () => {
       return;
     }
     
-    // Simulate API call
     const promise = new Promise((resolve) => setTimeout(resolve, 1500));
     
     toast.promise(promise, {
@@ -56,13 +55,12 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Ready to start your journey? Have questions about our plans? Drop us a message.
+            Contact us directly using the form below or our active office coordinates.
           </motion.p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16">
           
-          {/* Contact Info */}
           <motion.div 
             className="w-full lg:w-1/3 space-y-8"
             initial={{ opacity: 0, x: -30 }}
@@ -100,7 +98,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div 
             className="w-full lg:w-2/3"
             initial={{ opacity: 0, x: 30 }}
